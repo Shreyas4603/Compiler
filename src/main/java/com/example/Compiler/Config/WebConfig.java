@@ -14,6 +14,7 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
+                                "*",
                                 "http://localhost:5173",
                                 "http://13.234.29.166:8080",
                                 "https://13.234.29.166:8080",
@@ -29,8 +30,7 @@ public class WebConfig {
                                 "http://ec2-15-206-209-169.ap-south-1.compute.amazonaws.com"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
-                        .allowedHeaders("*")
-                        .allowCredentials(true);
+                        .allowedHeaders("*");
             }
         };
     }
