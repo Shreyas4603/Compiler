@@ -26,7 +26,7 @@ public class WebConfig {
                                 "http://15.206.209.169:8000",
                                 "https://15.206.209.169:8000",
                                 "https://ec2-15-206-209-169.ap-south-1.compute.amazonaws.com",
-                                "http://ec2-15-206-209-169.ap-south-1.compute.amazonaws.com"
+                                "http://ec2-15-206-209-169.ap-south-1.compute.amazonaws.com","*"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
