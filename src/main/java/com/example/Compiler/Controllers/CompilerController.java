@@ -19,11 +19,9 @@ public class CompilerController {
     @PostMapping
     public ResponseEntity<String> compileCode(@RequestBody CodeSubmission submission) {
         String result;
-        System.out.println("Data : " + submission.getCode() + " ---- " + submission.getLanguage());
 
         try {
             result = runService.compileAndRun(submission);
-            System.out.println("Result: " + result);
             return ResponseEntity.ok(result);
         } catch (Exception e) {
             System.err.println("Error: " + e.getMessage());

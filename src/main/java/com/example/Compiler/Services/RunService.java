@@ -143,7 +143,6 @@ public class RunService {
 
     private Problem getProblemData(String id) {
         Problem data = nodeClient.getProblemById(id);
-        System.out.println("Data : " + data.getProblemStatement());
         return data;
     }
 }
